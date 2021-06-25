@@ -40,6 +40,6 @@ app.put('/api/activities/checkout', activityCheckout);
 app.delete('/api/activities/:id', removeActivity);
 app.get('/api/activities', listActivities);
 
-app.listen(8000, () => {
+app.listen(process.env.PORT || 8000, () => {
     console.log("Servidor rodando na porta 8000...");
 });
